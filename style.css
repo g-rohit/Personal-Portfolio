@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap');
+/* 
+all heading:
+font-family: 'Hammersmith One', sans-serif;
+all text:
+font-family: 'Cabin Condensed', sans-serif;
+
+*/
+a {
+    text-decoration: none !important;
+color: inherit !important;
+transition: 0.08s ease-in-out;
+}
+
+.active, a:hover {
+    text-decoration: none !important;
+color: inherit !important;
+font-weight: 500;
+transition: 0.08s ease-in-out;
+
+}
+
+
+
+.bg-purple{
+    background-color: #ba5eff!important;
+    color: #FFF5F4!important;
+    background: linear-gradient(301deg, #ba5eff, #9c20f9);
+background-size: 400% 400%;
+
+-webkit-animation: purplebg 30s ease infinite;
+-moz-animation: purplebg 30s ease infinite;
+animation: purplebg 30s ease infinite;
+
+@-webkit-keyframes purplebg {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes purplebg {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes purplebg { 
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+}
+.bg-pink{
+    background-color: #FFADC4!important;
+    color: #f1f1ff!important;
+}
+.bg-grey{
+    background-color: #FFF5F4!important;
+    color: #0f0f6d!important;
+    background: linear-gradient(301deg, #696969, #ffffff);
+background-size: 400% 400%;
+
+-webkit-animation: greybg 30s ease infinite;
+-moz-animation: greybg 30s ease infinite;
+animation: greybg 30s ease infinite;
+
+@-webkit-keyframes greybg {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@-moz-keyframes greybg {
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+@keyframes greybg { 
+    0%{background-position:0% 9%}
+    50%{background-position:100% 92%}
+    100%{background-position:0% 9%}
+}
+}
+.bg-navyblue{
+    background-color: #0f0f6d  !important;
+    color: #FFF5F4 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+html {
+    font-family: 'Cabin Condensed', sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+#welcome-section, #projects, #contact {
+    min-height: 100vh;
+}
+
+.nav-item {
+    padding: 0  !important;
+    margin: 20px  !important;
+    font-size: 18px;
+}
+
+
+.aboutme {
+    font-size: 1.25em !important;
+}
+
+
+.sociallinks a {
+    padding: 20px; 
+     transition: 1s ease-out;
+
+}
+.sociallinks a:hover {
+    padding: 20px; 
+     color: rgb(255, 0, 72) !important;
+    transition: 1s ease;
+}
+.sociallinks {
+    margin-top:4em;
+    padding: 24px;
+}
+
+.sociallinks i {
+    margin: 10px !important;
+}
+
+.email:hover {
+text-decoration: underline !important;
+
+}
+
+ 
+
+
+.card {
+
+
+    transition-timing-function: ease-in;
+    transition-duration: .3s;
+
+
+}
+
+.card:hover{
+    box-shadow:     0px 0 10px 5px #0f0f6d65 !important;
+    transition-timing-function: ease-in;
+    transition-duration: .3s;
+ 
+}
+
+
+
+.pt-6 {
+    padding-top: 6em !important;
+}
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0f0f6d; /* Set a background color */
+ border-radius: 50%;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: .8;
+    transition: 1s ease;
+  }
+  
+  #myBtn:hover {
+    background-color: #9c20f9; /* Add a dark-grey background on hover */
+    transition: 1s ease;
+  }
+
+  .fa-arrow-up:before {
+    content: "\f062";
+    color: #eaeaea !important;
+}
+
+@media only screen and  (max-width:480px) {
+    .nav-item {
+        padding: 0  !important;
+        margin: 20px !important;
+    }
+    .sociallinks {
+        margin-top:0 !important;
+        padding: 24px;
+    }
+    #welcome-section, #projects, #contact {
+     padding-top: 6em !important;
+    }
+    
+}
+@media only screen and  (max-width:320px) {
+    .nav-item {
+        padding: 0  !important;
+        margin: 15px  !important;
+        font-size: 14px;
+    }
+    
+    .sociallinks {
+        margin-top: 0 !important;
+        padding: 20px !important;
+    }
+    #welcome-section, #projects, #contact {
+        padding-top: 6em !important;
+       }
+}
