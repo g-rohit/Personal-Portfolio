@@ -90,8 +90,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 html {
-    font-family: 'Cabin Condensed', sans-serif !important;
+
     scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: 'Cabin Condensed', sans-serif !important;
 }
 
 #welcome-section, #projects, #contact {
@@ -102,6 +106,7 @@ html {
     padding: 0  !important;
     margin: 20px  !important;
     font-size: 18px;
+text-transform: uppercase;
 }
 
 
