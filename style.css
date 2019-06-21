@@ -35,12 +35,12 @@ a {
 
 
 .bg-purple {
-    background-color: #ba5eff !important;
+    background-color: #6610f2 !important;
     color: #FFF5F4 !important;
-    background: linear-gradient(301deg, #ba5eff, #9c20f9);
+    /* background: linear-gradient(301deg, #6610f2, #9c20f9); */
     background-size: 400% 400%;
 
-    -webkit-animation: purplebg 30s ease infinite;
+    /* -webkit-animation: purplebg 30s ease infinite;
     -moz-animation: purplebg 30s ease infinite;
     animation: purplebg 30s ease infinite;
 
@@ -84,7 +84,7 @@ a {
         100% {
             background-position: 0% 9%
         }
-    }
+    } */
 }
 
 .bg-pink {
@@ -163,7 +163,7 @@ h6 {
 
 #welcome-section,
 #projects,
-#contact {
+#contact,#blog-section {
     min-height: 100vh;
 }
 
@@ -192,7 +192,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ba5eff;
+    background: #6610f2;
     z-index: -1;
     transition: transform 0.5s;
     transform: scaleY(0);
@@ -216,7 +216,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    background: #ba5eff;
+    background: #6610f2;
     z-index: -2;
     transition: transform 0.5s;
     transform: scaleY(0);
@@ -334,6 +334,15 @@ h6 {
     color: #eaeaea !important;
 }
 
+
+/* Blog page */
+
+
+
+
+
+
+/* Media queries */
 @media only screen and (max-width:480px) {
     .nav-item {
         padding: 10px !important;
