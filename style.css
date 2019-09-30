@@ -19,13 +19,13 @@ body {
 }
 
 a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: inherit !important;
     transition: 0.08s ease-in-out;
 }
 
 .active,a:hover {
-    text-decoration: none !important;
+    text-decoration: none;
     /* opacity: .5; */
 /* font-weight: 600; */
     transition: 0.08s ease-in-out;
@@ -159,7 +159,11 @@ h6 {
     font-family: 'Hammersmith One', sans-serif;
 }
 
-
+#logo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
 
 #welcome-section,
 #projects,
@@ -241,6 +245,7 @@ h6 {
 
 
 .sociallinks a {
+    text-decoration: none !important;
     padding: 20px;
     transition: 1s ease-out;
 
@@ -261,13 +266,16 @@ h6 {
     margin: 10px !important;
 }
 
-.email:hover {
+.email {
     text-decoration: underline !important;
 
 }
 
 
-
+::selection {
+    background: #000000;
+    color: #ffffff;
+}
 
 .card {
 
@@ -279,7 +287,7 @@ h6 {
 }
 
 .card:hover {
-    box-shadow: 0px 0 10px 5px #0f0f6d65 !important;
+    box-shadow: 1px 3px 10px #00000060 !important;
     transition-timing-function: ease-in;
     transition-duration: .3s;
 
@@ -334,6 +342,35 @@ h6 {
     color: #eaeaea !important;
 }
 
+.btn-3 {
+    background: red;
+    border: 1px solid #4400ff;
+ 
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: all 150ms linear;
+}
+
+
+.btn-3:hover {
+    background: #ff2701;
+
+    border: 1px solid rgba(#000, 0.05);
+    box-shadow: 1px 1px 2px rgba(#fff, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+ 
+    transition: all 250ms linear;
+}
+
+.gr-card-footer {
+ 
+ 
+    background: #0f0f6d !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    border-radius: 0 0 5px 5px;
+}
 
 /* Blog page */
 
@@ -354,7 +391,9 @@ h6 {
         padding: 24px;
     }
 
-    #welcome-section,
+ .aboutme {
+     font-size: 1em !important;
+ }
     #projects,
     #contact {
         padding-top: 6em !important;
