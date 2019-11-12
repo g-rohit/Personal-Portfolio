@@ -372,6 +372,16 @@ h6 {
     border-radius: 0 0 5px 5px;
 }
 
+.funProjects ul li {
+    margin: 10px;
+}
+
+.goBack p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
 /* Blog page */
 
 
