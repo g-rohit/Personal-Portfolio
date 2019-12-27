@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Designed & Developed by
+
+ ██████╗     ██████╗  ██████╗ ██╗  ██╗██╗████████╗
+██╔════╝     ██╔══██╗██╔═══██╗██║  ██║██║╚══██╔══╝
+██║  ███╗    ██████╔╝██║   ██║███████║██║   ██║   
+██║   ██║    ██╔══██╗██║   ██║██╔══██║██║   ██║   
+╚██████╔╝    ██║  ██║╚██████╔╝██║  ██║██║   ██║   
+ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝   ╚═╝   
+                                                  
+
+https://www.linkedin.com/in/grohit19/
+-->
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142315691-1"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+  
+          gtag('config', 'UA-142315691-1');
+      </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Weather update | G Rohit</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600,700|Open+Sans:400,600,700&display=swap'>
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Meta tags -->
+    <meta name="description"
+        content="I'm G Rohit, a Web enthusiast, tech geek and professionally a UI/UX developer from Hyderabad, India.">
+    <meta name="keywords"
+        content="grohit,g rohit,rohit,rohit hyderabad, rohit developer,g rohit,rohith,gr.psd,gr,grohith,Developer,designer,web designer, web developer, UI/UX, UI developer, Front end developer, website designer, website developer, prism club and kitchen hyderabad,prismclubs,prism club">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="G Rohit">
+    <meta name="language" content="EN">
+    <meta name="author" content="G Rohit">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="title" content="WeatherAPP | G Rohit | UI/UX Developer | Hyderabad">
+    <meta name="revisit-after" content="1 days">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">
+            Get Weather Update <br>
+            <span class="smallFont">As of now works only for Indian Zipcode</span>
+        </h1>
+        <div class="displayWeatherInfo">
+            <div class="userQuery">
+                <ul>
+                    <li>
+                        <p style="text-align: right"><span id="currentDate"></span> </p>
+                    </li>
+
+                  
+                    <li class="userInput">
+                        <input type="text" value="" placeholder="Enter your area ZIP code" maxlength="6" required
+                            id="zipCode"><br>
+                        <p class="error"></p>
+                    </li>
+                    <li>
+                        <input type="button" class="btn btn-long" value="Display Weather Info"
+                            onclick="displayWeatherDetails()">
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="queryResult">
+ 
+ 
+                        <table border="0" cellspacing="0" cellpadding="0" class="queryDetails">
+                            <tr>
+                                <td>
+                                    Current Temperature: 
+                                </td>
+                                <td id="currentTemperature" class="values currTemp">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Max Temperature: 
+                                </td>
+                                <td id="maxTemperature" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Min Temperature: 
+                                </td>
+                                <td id="minTemperature" class="values">
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    Area Name:
+                                </td>
+                                <td id="areaName" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Area zipcode:
+                                </td>
+                                <td id="showZipCode" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Weather condition:
+                                </td>
+                                <td id="condition" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sunrise: 
+                                </td>
+                                <td id="sunriseTime" class="values">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Sunset: 
+                                </td>
+                                <td id="sunsetTime" class="values">
+
+                                </td>
+                            </tr>
+                            
+                        </table>
+                 
+                 
+
+               
+            </div>
+        </div>
+        <div class="goBack">
+            <p><a onclick="window.location='http://www.grohit.com/#projects'" target="_self" aria-label="Projects" style="text-decoration: underline;cursor: pointer;">Back to all projects</a></p>
+        </div>
+        <footer>
+            &copy; Developed by <a href="https://grohit.com">G Rohit</a>
+        </footer>
+
+
+    </div>
+ 
+    <script src="main.min.js"></script>
+</body>
+
+
+</html>

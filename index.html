@@ -74,7 +74,7 @@ https://www.linkedin.com/in/grohit19/
     <link href="https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap" rel="stylesheet">
 
     <!-- Redirect HTTP to HTTPS only if the browser supports Let's Encrypt SSL/TLS certificates -->
-    <script src="https://https.netlify.com/redirect.js"></script>
+    <!-- <script src="https://https.netlify.com/redirect.js"></script> -->
 </head>
 
 <body>
@@ -98,10 +98,10 @@ https://www.linkedin.com/in/grohit19/
         <div class="row bg-purple text-center d-flex justify-content-center align-items-center" id="welcome-section">
             <div class="col">
                 <img src="assests/gr-logo.png" alt="profile-pic" class="img-fluid rounded-circle mb-2 mt-1" id="logo">
-                <h1 class="d-none d-md-block d-lg-block">Hi, I'm G Rohit</h1>
-                <h1 class="d-lg-none d-xl-none d-md-none d-sm-block d-xs-block ">Hi,<br>I'm G Rohit</h1>
+                <h1 class="d-md-block d-lg-block">Hi, I'm G Rohit</h1>
+                <!-- <h1 class="d-lg-none d-xl-none d-md-none d-sm-block d-xs-block ">Hi,<br>I'm G Rohit</h1> -->
                 <p class="container aboutme p-3">A skilled web developer, web enthusiast, tech geek, and a
-                    proactive individual who is passionate about computers, technology, and music. I reside in Hyderabad, India. Feel free to get in touch with me by <a href="mailto:social@grohit.com" class="email text-underline">dropping me an email</a>.
+                    proactive individual who is passionate about computers, technology, and music. I reside in Hyderabad, India. Feel free to get in touch with me by <a href="mailto:social@grohit.com" class="d-inline-block email text-underline">dropping me an email</a>.
                 </p>
 
                 <a href="#projects"><i class="fas fa-arrow-circle-down"></i> Scroll down to check my work</a>
@@ -163,7 +163,7 @@ https://www.linkedin.com/in/grohit19/
                             <h4 class="card-title">InstaScheduler</h4>
                             <p>https://www.instascheduler.in</p>
                             <p class="text-left">Designed and developed (Only frontend) this website which can help you
-                                schedule Instagram posts and story. <span class="p-2 mt-2 badge badge-custom badge-pill">Sold this website</span></p>
+                                schedule Instagram posts and story. <span class="p-2 mt-2 badge badge-pill badge-custom ">Sold this website</span></p>
  
 
                         </div>
@@ -257,34 +257,39 @@ https://www.linkedin.com/in/grohit19/
         </div>
 
 
-<div class="container">
-        <div class="row  text-left mt-5 mb-4">
+<div class="container funProjects">
+    <p class="lead mt-5 mb-4">
+        You can check out my other coding projects on my&nbsp;<a href="https://codepen.io/grohit/" rel="noopener" target="_blank"
+            class="rounded email p-1">codepen profile</a> and all my design related stuff on&nbsp;<a
+            href="https://www.behance.net/g-rohit" rel="noopener" target="_blank" class="email p-1">behance</a>.</p>
+    <div class="row  text-left ">
             <div class="col">
-                You can check out my other coding projects on my&nbsp;<a href="https://codepen.io/grohit/" rel="noopener" target="_blank"
-                    class="badge-custom badge-pill email p-2">codepen profile</a> and all my design related stuff on&nbsp;<a
-                    href="https://www.behance.net/g-rohit" rel="noopener" target="_blank" class="badge-custom badge-pill email p-2">behance</a>.
+
             </div>
         
         </div>
         <p class="lead">Some of my other fun projects which I created:</p>
 
         <div class="row">
-            <div class="col-md-12 funProjects">
-                <ul >
+            <div class="col-md-12 ">
+                <ul class="pl-3">
                     <li class="m-4">
-                        <a href="/WeatherApp"><b>WeatherApp</b></a>: You just need to enter your area Zip code and it will display the relevant temperature information. <a href="/WeatherApp" class="badge-custom rounded email p-2" target="_blank">Check it out</a> 
+                        <a href="/WeatherApp"><b>WeatherApp</b></a>: You just need to enter your area Zip code and it will display the relevant temperature information. <a href="/WeatherApp" class="badge-custom badge-pill badge rounded email p-2" target="_blank">Check it out</a> 
                     </li>
                     <li class="m-4">
-                        <a href="/scratchCard"><b>Scratch Card</b></a>: I wanted to create something like google pay scratch card so found a very useful jQuery plugin called - <a href="http://wscratchpad.websanova.com/" target="_blank" rel="noopener">wscratchpad.js</a>, using which I made this simple scratch card. <a href="/scratchCard" class="  badge-custom rounded email p-2" target="_blank">Check it out</a> 
+                        <a href="/scratchCard"><b>Scratch Card</b></a>: I wanted to create something like google pay scratch card so found a very useful jQuery plugin called - <a href="http://wscratchpad.websanova.com/" target="_blank" rel="noopener">wscratchpad.js</a>, using which I made this simple scratch card. <a href="/scratchCard" class="badge-custom badge-pill badge rounded email p-2" target="_blank">Check it out</a> 
                     </li>
                     <li class="m-4">
-                        <a href="/SpinnerWheel" target="_blank"><b>Spinner Wheel (Fun game)</b></a>: Fun game to play when you are bored.  <a href="/SpinnerWheel" class="  badge-custom rounded email p-2" target="_blank">Check it out</a> 
+                        <a href="/SpinnerWheel" target="_blank"><b>Spinner Wheel (Fun game)</b></a>: Fun game to play when you are bored.  <a href="/SpinnerWheel" class="badge-custom badge-pill badge rounded email p-2" target="_blank">Check it out</a> 
                     </li>
                     <li class="m-4">
-                        <a href="https://tweets-scrapper.herokuapp.com/" target="_blank"><b>Fetch Tweets</b></a>: I made this application for my own usage as many times I am in a requirement to grab quickly some quotes or facts from random accounts and copying each tweet was time consuming. So I decided to create this simple web app. I have used NodeJS, express, cheerio , ejs and bootsrap for this project. <a href="https://tweets-scrapper.herokuapp.com/" class="  badge-custom rounded email p-2" target="_blank" rel="noopener">Check it out</a> 
+                        <a href="https://instatools.netlify.com/" target="_blank"><b>Insta Tools</b></a>: This app helps in fetching basic account info of public Instagram profiles, along with no of followers in full count. Will be adding more features in this soon. <a href="https://instatools.netlify.com/" class="badge-custom badge-pill badge rounded email p-2" target="_blank" rel="noopener">Check it out</a> 
                     </li>
                     <li class="m-4">
-                        <a href="/todoapp" target="_blank"><b>To do List App</b></a>: I developed this 'To Do List app' using pure javascript, and Materialize CSS for UI. <a href="/todoapp" class="  badge-custom rounded email p-2" target="_blank" >Check it out</a>
+                        <a href="https://tweets-scrapper.herokuapp.com/" target="_blank"><b>Fetch Tweets</b></a>: I made this application for my own usage as many times I am in a requirement to grab quickly some quotes or facts from random accounts and copying each tweet was time consuming. So I decided to create this simple web app. I have used NodeJS, express, cheerio , ejs and bootsrap for this project. <a href="https://tweets-scrapper.herokuapp.com/" class="badge-custom badge-pill badge rounded email p-2" target="_blank" rel="noopener">Check it out</a> 
+                    </li>
+                    <li class="m-4">
+                        <a href="/todoapp" target="_blank"><b>To do List App</b></a>: I developed this 'To Do List app' using pure javascript, and Materialize CSS for UI. <a href="/todoapp" class="badge-custom badge-pill badge rounded email p-2" target="_blank" >Check it out</a>
                     </li>
                 </ul>
             </div>

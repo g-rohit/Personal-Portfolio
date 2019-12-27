@@ -393,6 +393,7 @@ h6 {
 .badge-custom {
     color: #0f0f6d;
 background-color: #e9ecef;
+font-weight: 400 !important;
 }
 /* Blog page */
 
