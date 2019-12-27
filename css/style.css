@@ -268,9 +268,11 @@ h6 {
 
 .email {
     text-decoration: underline !important;
-
 }
-
+.email:hover {
+    text-decoration: none !important;
+    }
+    
 
 ::selection {
     background: #000000;
@@ -372,6 +374,10 @@ h6 {
     border-radius: 0 0 5px 5px;
 }
 
+.funProjects {
+    line-height: 32px;
+}
+
 .funProjects ul li {
     margin: 10px;
 }
@@ -382,7 +388,16 @@ h6 {
     font-size: 20px;
 }
 
+/* badge pill */
+
+.badge-custom {
+    color: #0f0f6d;
+background-color: #e9ecef;
+}
 /* Blog page */
+
+
+
 
 
 
