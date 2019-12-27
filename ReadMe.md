@@ -1,4 +1,4 @@
 # Personal Portfolio 
-Built my portfolio as a part of Freecodecamp projects. I kept this very minimal style. Nothing fancy but elegant look.
+Built my portfolio using Bootstrap. I tried to keep it minimal style.
 
-[Visit](https://grohit.com)
+Check it out: [Visit](https://grohit.com)
