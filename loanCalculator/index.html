@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Loan Calculator | By G Rohit</title>
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <!-- Meta -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+ 
+    <meta name="title" content="Home Loan EMI Calculator | EMI Calculator | Calculate EMI for Housing Loan" />
+    <link rel="canonical" href="https://grohit.com/loanCalculator" />
+    <meta name="description" content="Home Loan Calculator - A simple Home Loan EMI Calculator app which helps you calculate the EMI required to pay. Visit Now" />
+     
+    <meta property="og:title" content="Home Loan EMI Calculator | EMI Calculator | Calculate EMI for Housing Loan" />
+    <meta property="og:description" content="A simple Home Loan EMI Calculator app which helps you calculate the EMI required to pay. Visit Now" />
+    <meta name="keywords" content="Home Loan, EMI Calculator, Home Loan EMI Calculator, home loan calculator, housing loan calculator, emi calculator home loan, house loan calculator, house loan, home loan repayment calculator, calculate home loan emi, home emi calculator, home loan india, emi for home loan, emi calculator housing loan, loan for home, property loan emi calculator, home loan interest calculation" />
+    <meta name="robots" content="noodp,noydir" />
+     
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://grohit.com/loanCalculator" />
+     
+    <!--Import Google Icon Font-->
+    <!-- <link href="css/Material-Icons.css" rel="stylesheet"> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <!-- fa pro -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css">
+    <!-- <link rel="stylesheet" href="../css/FA.min.css"> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom.css">
+    <!-- sticky Footer -->
+    <link rel="stylesheet" href="../css/stickyFooter.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="stylesheet" href="../css/fonts.css">
+
+</head>
+
+<body>
+    <header class="bg-navyblue">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center"> <i class="fal fa-calculator" aria-hidden="true"></i> Loan Calculator </h4>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="row card ">
+            <div class="col s12">
+                <form id="calculator-form" method="POST">
+                    <div class="card-content row" id="userInputsDiv">
+                        <div class="card-title">
+                            Enter the details
+                        </div>
+                        <div class="input-field col s12 l4 m12 appInput">
+                            <input type="number" name="amount" id="amount"  step=".01">
+                            <label for="amount">Amount (₹)</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the Loan
+                                amount</span>
+                        </div>
+                        <div class="input-field col s12 l4 m12 appInput">
+                            <input type="number" name="interestRate" id="interestRate"  step=".01">
+                            <label for="interestRate">Interest rate (%)</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the Interest
+                                rate</span>
+                        </div>
+                        <div class="input-field col s12 l4 m12 appInput">
+                            <input type="number" name="yearsToRepay" id="yearsToRepay"  step=".01">
+                            <label for="yearsToRepay">Time period (years)</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the number of
+                                years</span>
+                        </div>
+                    </div>
+
+                    <div class="card-content row">
+                        <div class="col l4 s12 m12">
+                            <button class="btn btn-large bg-navyblue lead" id="calculate" type="submit">Calculate 
+                                <!-- <i class="far fa-arrow-right fa-1x"></i> -->
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+        <!-- spinner  starts-->
+        <div class="row">
+            <div class="col s12 l12">
+                <p class="center" id="spinner">
+                    <i class="fad fa-spinner-third fa-5x"></i>
+                </p>
+            </div>
+        </div>
+        <!-- spinner  ends-->
+
+        <!-- Result block  starts-->
+        <div class="row card" id="results">
+            <div class="col s12 l12 center">
+                <!-- <p>Simple Interest</p> -->
+<table class="centered collection striped">
+    <thead>
+        <tr>
+            <th>Monthly Payment:</th>
+            <th>Total Interest:</th>
+            <th>Total Payment:</th>
+        </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td id="monthlyPayment"> </td>
+                <td id="totalInterest"> </td>
+                <td id="totalPayment"></td>
+            </tr><tr>
+                <td class="grey-text" id="loanAmount"></td>
+                <td class="grey-text" id="loanInterest"></td>
+                <td class="grey-text" id="loanRepaytime"></td>
+            </tr>
+            
+        </tbody>
+</table>
+
+            </div>
+        </div>
+    </div>
+    <!-- Result block  ends-->
+</body>
+
+<!-- Footer starts-->
+<footer class="footer bg-navyblue">
+
+    <!-- Copyright -->
+    <!-- ❤️  -->
+    <div class="footer-copyright text-center">&copy; Developed with <i class="fas fa-heart" aria-hidden="true"></i> by
+        <a href="https://grohit.com/" class="white-text">G Rohit</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer ends-->
+
+
+<script src="../js/materialize.min.js"></script>
+<script src="app.min.js"></script>
+
+</html>

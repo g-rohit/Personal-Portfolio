@@ -1,0 +1,98 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+
+#calculate {
+    font-size: 20px;
+    position: relative;
+    transition: all 0.5s;
+
+    /* padding: 0; */
+}
+
+#calculate:hover {
+    padding: 0 3em 0 .7em;
+    transition: all 0.5s;
+
+}
+
+
+#calculate::after {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 100;
+    font-display: auto;
+    opacity: 0;
+    margin-left: 0;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+
+}
+
+
+#calculate:hover::after {
+    opacity: 1;
+    margin-left: 15px;
+    transition: all 0.5s;
+
+}
+
+
+.appInput .active {
+    color: #0f0f6d !important;
+}
+
+.fa-arrow-right {
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.5s;
+}
+
+.ml-move {
+    margin-left: 10px;
+    ;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition: all 0.5s;
+}
+
+input[type=number]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #0f0f6d;
+    -webkit-box-shadow: 0 1px 0 0 #0f0f6d;
+    box-shadow: 0 1px 0 0 #0f0f6d;
+}
+
+
+#spinner {
+    display: none;
+    width: 100px;
+    margin: 0 auto;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#results {
+    display: none;
+}
