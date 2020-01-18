@@ -1,6 +1,7 @@
 /* global for home page and body */
-@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Miriam+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Hind+Siliguri:300,400,500,600,700&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
+ 
 
 body {
     font-family: 'Hammersmith One', sans-serif;
@@ -9,4 +10,7 @@ body {
 /* 
 Add Hack to CSS
 pre, code { font-family: Hack, monospace; }
+for body
+font-family: 'Hind Siliguri', sans-serif;
+
 */

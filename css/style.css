@@ -2,10 +2,14 @@
 all heading, Nav items:
 font-family: 'Hammersmith One', sans-serif;
 all text:
-font-family: 'Miriam Libre', sans-serif !important;
+    font-family: 'Hind Siliguri', sans-serif !important;
+
+
 
 
 */
+
+@import url('https://pro.fontawesome.com/releases/v5.12.0/css/all.css');
 
 html {
 
@@ -13,8 +17,7 @@ html {
 }
 
 body {
- 
-    font-family: 'Miriam Libre', sans-serif !important;
+    font-family: 'Hind Siliguri', sans-serif !important;
     font-weight: normal;
 }
 
@@ -32,7 +35,9 @@ a {
 
 }
 
-
+.lead {
+    font-weight: 400 !important;
+}
 
 .bg-purple {
     background-color: #6610f2 !important;
@@ -266,17 +271,40 @@ h6 {
     margin: 10px !important;
 }
 
-.email {
-    text-decoration: underline !important;
+ 
+.external__link, .email {
+ display: inline-block;
+ border-radius: 0 !important;
+    text-decoration: none;
+    transition: all 0.2s;
+
 }
-.email:hover {
-    text-decoration: none !important;
-    }
+.external__link:hover , .email:hover {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+    border-radius: 0 !important;
+    text-decoration: none;
     
+    }
+
+
+    .external__link {
+        border-bottom: 1px solid;
+
+    }    
+
+
+.email {
+    border-bottom: 1px solid #ffffff;
+}
+
+ 
+
 
 ::selection {
-    background: #000000;
-    color: #ffffff;
+    background: #00ffd5;
+    color: #000000;
 }
 
 .card {
@@ -375,11 +403,16 @@ h6 {
 }
 
 .funProjects {
-    line-height: 32px;
+    line-height: 1.6;
 }
 
 .funProjects ul li {
     margin: 10px;
+}
+
+.funProjectName {
+    font-weight: 500;
+    font-size: 1.2em;
 }
 
 .goBack p{
