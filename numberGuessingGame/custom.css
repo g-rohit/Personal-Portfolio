@@ -1,0 +1,75 @@
+.active {
+    color: #0f0f6d !important;
+}
+
+input[type=number]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid #0f0f6d;
+    -webkit-box-shadow: 0 1px 0 0 #0f0f6d;
+    box-shadow: 0 1px 0 0 #0f0f6d;
+}
+
+.title.card-title {
+    font-family: Hack, monospace;
+    font-weight: 700;
+}
+
+#guessBtn {
+    font-size: 20px;
+    position: relative;
+    transition: all 0.5s;
+    /* padding: 0; */
+}
+
+#guessBtn:hover {
+    padding: 0 3em 0 .7em;
+    transition: all 0.5s;
+}
+
+#guessBtn::after {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 100;
+    font-display: auto;
+    opacity: 0;
+    margin-left: 0;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+#guessBtn:hover::after {
+    opacity: 1;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+#mainContainer {
+    height: 65vh;
+}
+
+p.message {
+    padding: 30px 13px;
+    font-family: Hack, monospace;
+    font-weight: 400;
+    color: red;
+}
+
+.fa-info-circle {
+    opacity: .7;
+}
+ 
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 568px) 
+  and (max-device-width: 812px)
+  and (orientation: landscape) {
+    #mainContainer {
+        height: 100vh;
+    }
+}

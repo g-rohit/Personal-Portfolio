@@ -1,2 +1,12 @@
 /* global for home page and body */
 @import url('https://fonts.googleapis.com/css?family=Hammersmith+One|Miriam+Libre&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
+
+body {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/* 
+Add Hack to CSS
+pre, code { font-family: Hack, monospace; }
+*/
