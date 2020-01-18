@@ -258,7 +258,7 @@ h6 {
 
 .sociallinks a:hover {
     padding: 20px;
-    color: rgb(255, 0, 72) !important;
+    color: #ff0048 !important;
     transition: 1s ease;
 }
 
@@ -393,15 +393,20 @@ h6 {
     transition: all 250ms linear;
 }
 
+
+
 .gr-card-footer {
- 
- 
+    transition: all 0.5s; 
     background: #0f0f6d !important;
     color: #ffffff !important;
     text-transform: uppercase;
     border-radius: 0 0 5px 5px;
 }
-
+.gr-card-footer:hover {
+    background: #6610F2 !important;    
+    transition: all 0.5s; 
+    }
+    
 .funProjects {
     line-height: 1.6;
 }
