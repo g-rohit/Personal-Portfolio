@@ -312,15 +312,17 @@ h6 {
 
     transition-timing-function: ease-in;
     transition-duration: .3s;
+border: 0;
 
 
 }
 
 .card:hover {
-    box-shadow: 1px 3px 10px #00000060 !important;
+    box-shadow: 0 6px 25px 5px #70707040 !important;
     transition-timing-function: ease-in;
     transition-duration: .3s;
-
+    transform: translateY(-5px);
+    
 }
 
 
@@ -400,7 +402,7 @@ h6 {
     background: #0f0f6d !important;
     color: #ffffff !important;
     text-transform: uppercase;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 3px 3px;
 }
 .gr-card-footer:hover {
     background: #6610F2 !important;    
